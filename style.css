@@ -150,7 +150,7 @@ aside {
   text-overflow: ellipsis;
 }
 
-#card1:after {
+/*#card1:after {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -177,7 +177,7 @@ aside {
   -webkit-background-size: auto auto;
   background-size: auto auto;
   text-shadow: none;*/
-}
+
 
 #card2 {
   background-image: url(http://i.imgur.com/r1nBBTD.jpg);
