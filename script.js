@@ -32,9 +32,10 @@ var question = button.on("click", function(){
         question.append ("<li>" + choices[i] + "</li>");
         }
 
-  $("li").on("click", function (){
+  $("li").on("click", function (){7
       if ($(this).text() === choices[1]) {
         $("#card1").css("opacity", "1");
+        var catagories = delete catagories[0];
       } else {
         alert ("Sorry that is incorrect");
       }
