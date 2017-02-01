@@ -1,24 +1,24 @@
-console.log("hello world");
+
 
 var questions = [ {
-  "question": "what is a cat?",
-  "option1":"Animal",
-  "option2": "Fish",
-  "option3":"bird",
-  "option4":"fruit",
+  "question": "What is the Egyptian word for 'cat'?",
+  "option1":"Cat",
+  "option2": "Mau",
+  "option3":"Niko",
+  "option4":"Gato",
   "answer":"2"
 }, {
-  "question": "what is a dog?",
-  "option1":"Animal",
-  "option2": "Fish",
-  "option3":"bird",
-  "option4":"fruit",
+  "question": "In which Country are Cats more popular than dogs?",
+  "option1":"Canada",
+  "option2": "Russia",
+  "option3":"USA",
+  "option4":"The Philippines",
   "answer":"3"
 }, {
-  "question": "what is a bird?",
-  "option1":"Animal",
-  "option2": "Fish",
-  "option3":"bird",
-  "option4":"fruit",
+  "question": "How do cats sweat?",
+  "option1":"Through their jelly beans",
+  "option2": "Under their little arms",
+  "option3":"Osmosis",
+  "option4":"Mitochondria is the powerhouse of the cell",
   "answer":"1"
 }]
