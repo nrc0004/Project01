@@ -2,62 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Trivial Triva!</title>
-    <link async href="http://fonts.googleapis.com/css?family=Black%20Ops%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-    <link async href="http://fonts.googleapis.com/css?family=Anton" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-<link async href="http://fonts.googleapis.com/css?family=Arizonia" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-<link async href="http://fonts.googleapis.com/css?family=Nova%20Flat" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-
+    <title> Triva</title>
     <link rel="stylesheet" href="style.css">
-    <link async href="http://fonts.googleapis.com/css?family=Aldrich" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-<link async href="http://fonts.googleapis.com/css?family=Arizonia" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-<link async href="http://fonts.googleapis.com/css?family=Nova%20Flat" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-    <link async href="http://fonts.googleapis.com/css?family=VT323" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-    <link async href="http://fonts.googleapis.com/css?family=Audiowide" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-    <link async href="http://fonts.googleapis.com/css?family=Arizonia" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-<link async href="http://fonts.googleapis.com/css?family=Nova%20Flat" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-
-   </head>
-<body>
-<header>
-  <h1>Trivial Trivia</h1>
-</header>
-
-
-<aside class="aside1">
-  <!-- <div class="catagories">
-      <div class="pop"> Pop Culture</div>
-      <div class="sports"> Science</div>
-      <div class="lit"> Literature</div>
-      <div class="poli"> Politics</div>
-      <div class="his"> History</div>
-  </div> -->
-
-  <div class="wheelcontainer">
-    <div class="top">
-      <div id= "card1" class="card">Pop Culture</div>
-      <div id= "card2" class="card">Science</div>
-    </div>
-    <div class="middle">
-      <div class="centerpiece">
-      <div class="questions"> </div>
-      <div class="answers"> </div>
-    </div> </div>
-    <div class="bottom">
-      <div id= "card3" class="card">Literature</div>
-      <div id= "card4" class="card">Politics</div>
-      <div id= "card5" class="card">History</div>
-    </div>
-
-  </div>
-
-
-  <!-- <div class="catagories2"></div> -->
-
-</aside>
-<footer> Footer</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="script.js" charset="utf-8"></script>
-    </script>
-</body>
+  </head>
+
+  <body>
+   <div class="box">
+     <h1>Triva Questions</h1>
+     <hr>
+
+     <p id= "question"></p>
+
+     <div class="buttons">
+       <button id="btn1"><span id= "choice1"></span></button>
+       <button id="btn2"><span id= "choice2"></span></button>
+       <button id="btn3"><span id= "choice3"></span></button>
+       <button id="btn4"><span id= "choice4"></span></button>
+     </div>
+
+     <footer>
+      <p id="progress">Question x of y</p>
+
+    </footer>
+   </div>
+
+
+  </body>
+
 </html>
