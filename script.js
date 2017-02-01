@@ -1,6 +1,6 @@
 
 
-var questions = [ {
+var questions = [{
   "question": "What is the Egyptian word for 'cat'?",
   "option1":"Cat",
   "option2": "Mau",
@@ -21,4 +21,5 @@ var questions = [ {
   "option3":"Osmosis",
   "option4":"Mitochondria is the powerhouse of the cell",
   "answer":"1"
-}]
+}
+]
