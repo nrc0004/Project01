@@ -24,26 +24,27 @@ function loadQuestion (questionIndex) {
 function loadNextQuestion() {
   var selecetedOption = document.querySelector("input [type=radio]:checked");
 
+  document.getElementById('nextButton').on("click", loadNextQuestion());
+
     if (!selecetedOption){
       alert ('Please select your answer!');
       return;
     }
     var answer = selecetedOption.value;
-      if (questions[currentQuestion].answer == answer) {
-        score += 1;
+      if (questions[currentQuestion].answer === answer) {
+        score += 10;
       }
       selecetedOption.checked = false;
       currentQuestion++;
-      if (currentQuestion== totQuestions - 1 ){
+        if (currentQuestion === totQuestions - 1 ){
         nextButton.textContent= 'finish';
       }
-      if (currentQuestion == totQuestions){
+        if (currentQuestion === totQuestions){
         container.style.display= "none";
         resultCont.style.display = '';
         resultCont.textContent = "Your Score "+ score;
         return;
-      }
-      loadQuestion (currentQuestion);
+      }  loadQuestion (currentQuestion);
 }
 
 loadQuestion(currentQuestion);

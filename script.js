@@ -4,7 +4,7 @@ var questions = [ {
   "question": "What is the Egyptian word for 'cat'?",
   "option1":"Cat",
   "option2": "Mau",
-  "option3":"Niko",
+  "option3":"Neko",
   "option4":"Gato",
   "answer":"2"
 }, {
