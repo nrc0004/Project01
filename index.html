@@ -2,40 +2,58 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Final Quiz</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <link async href="http://fonts.googleapis.com/css?family=Audiowide" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Jim+Nightshade|Lobster|Orbitron|Pacifico|Pavanam|Raleway|Revalia" rel="stylesheet">
+    <link rel="stylesheet" href="master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <title>Trivia</title>
+
   </head>
 
   <body>
-    <header>
-      <nav>
-        <ul class="topnav" id="myTopnav">
-            <li><a href="#home">Instructions</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="icon">
-              <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-            </li>
-        </ul>
-      </nav>
-    </header>
-    <div id="quizContainer" class"container">
 
-      <div id="title">CAT FACTS!</div>
-
-      <div id="question" class="question"></div>
-      <label class= "option"><input type="radio" name="option" value="1"/> <span id= "opt1"></span> </label>
-      <label class= "option"><input type="radio" name="option" value="2"/> <span id= "opt2"></span> </label>
-      <label class= "option"><input type="radio" name="option" value="3"/> <span id= "opt3"></span> </label>
-      <label class= "option"><input type="radio" name="option" value="4"/> <span id= "opt4"></span> </label>
-
-      <button id= "nextButton" class = "next-btn" onClick ="loadNextQuestion();"> Next Question </button>
-
+    <div class="container-fluid title">
+      <h1 class="name">Project Trivia</h1>
     </div>
-    <div id="result" class= "container result" style= "display:none;"></div>
-    <script src="script.js" charset="utf-8"></script>
-    <script src="app.js" charset="utf-8"></script>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid nav">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="instructions" href="#">Instructions</a></li>
+          <li><a class= "about"href="#">About Trivia</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+
+      <div class="row">
+        <div class="col-sm-3 aside">
+          <div id="card1" class="cat"> Pop Culture</div>
+          <div id="card2"class="cat"> Science</div>
+          <div id="card3"class="cat"> Literature</div>
+          <div id="card4" class="cat"> History</div>
+        </div>
+
+        <div class="col-sm-9 display">
+          <div class="card">
+            <div class="question"><h1>Welcome to Project Trivia!</h1> <p>Press the "Next" button to get started or check out the instructions above</p></div>
+
+            <form id="myform" class="bottom" action="#" >
+              <input id="playerAnswer" type="text" placeholder= "Enter Answer Here...">
+              <button class= "submit" type="submit" > Submit Answer</button>
+            </form>
+
+
+          </div>
+          <div class="next"> Next Question
+          </div>
+        </div>
+      </div>
+    </main>
+
   </body>
 </html>
